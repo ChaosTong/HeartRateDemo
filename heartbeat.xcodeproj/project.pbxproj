@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F025DEE2445600F00228644 /* EnvironmentalAudioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F025DED2445600F00228644 /* EnvironmentalAudioViewController.swift */; };
 		0F1EAAFD229B7F2B00CE01AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1EAAFC229B7F2B00CE01AD /* AppDelegate.swift */; };
 		0F1EAAFF229B7F2B00CE01AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1EAAFE229B7F2B00CE01AD /* ViewController.swift */; };
 		0F1EAB02229B7F2B00CE01AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F1EAB00229B7F2B00CE01AD /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F025DED2445600F00228644 /* EnvironmentalAudioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentalAudioViewController.swift; sourceTree = "<group>"; };
 		0F1EAAF9229B7F2B00CE01AD /* heartbeat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = heartbeat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F1EAAFC229B7F2B00CE01AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F1EAAFE229B7F2B00CE01AD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				0F1EAB11229B7F5600CE01AD /* heartbeat.entitlements */,
 				0F1EAAFC229B7F2B00CE01AD /* AppDelegate.swift */,
 				0F1EAAFE229B7F2B00CE01AD /* ViewController.swift */,
+				0F025DED2445600F00228644 /* EnvironmentalAudioViewController.swift */,
 				0F1EAB00229B7F2B00CE01AD /* Main.storyboard */,
 				0F1EAB03229B7F2E00CE01AD /* Assets.xcassets */,
 				0F1EAB05229B7F2E00CE01AD /* LaunchScreen.storyboard */,
@@ -196,16 +199,11 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-heartbeat/Pods-heartbeat-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/AAInfographics/AAInfographics.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-heartbeat/Pods-heartbeat-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AAInfographics.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-heartbeat/Pods-heartbeat-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -219,6 +217,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F025DEE2445600F00228644 /* EnvironmentalAudioViewController.swift in Sources */,
 				0F1EAAFF229B7F2B00CE01AD /* ViewController.swift in Sources */,
 				0F1EAAFD229B7F2B00CE01AD /* AppDelegate.swift in Sources */,
 			);
@@ -368,16 +367,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = heartbeat/heartbeat.entitlements;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9Y74876TPS;
 				INFOPLIST_FILE = heartbeat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.easyulife.heartbeat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = heartbeat_dev;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -392,6 +393,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = heartbeat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
